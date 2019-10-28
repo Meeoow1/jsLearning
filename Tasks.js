@@ -66,3 +66,73 @@ c = (1 && 2);
 console.log(d = c);
 console.log(d);
 console.log(c);
+
+
+
+// function first(lang, callback) {
+//     setTimeout(function(){
+//         console.log(lang);
+//     }, 500);
+//     callback();
+// }
+
+// first('Arara', function() {
+//     console.log(2);
+// });
+
+// Callback функция позволяет вызывать в себе еще одну функцию.
+
+// function first() {
+//     console.log('2');
+// }
+
+// function second(b, callback) {
+//     console.log(b);
+//     callback();
+// }
+
+// second(3, first);
+
+
+// function done(){
+//     console.log('I passed 3d lesson!');
+// }
+
+// function learnJS(lang, callback){
+//     console.log('I learn ' + lang);
+//     callback();
+// }
+
+// // function done(){
+// //     console.log('I passed 3d lesson!');
+// // }
+
+// learnJS('JS', done);
+
+// function first() {
+//     setTimeout( function(){
+//         console.log(1);
+//     }, 500 );
+// }
+
+// function second(){
+//     console.log(2);
+// }
+
+// first();
+// second();
+
+
+function first(callback) {
+    setTimeout( function(){
+        console.log(1);
+    }, 500 );
+    callback();
+}
+
+function second(){
+    console.log(2);
+}
+
+second(first);
+second();
