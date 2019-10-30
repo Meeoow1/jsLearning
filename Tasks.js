@@ -136,3 +136,22 @@ function second(){
 
 second(first);
 second();
+
+// let arr = [ 1, 2, 3, 4, 5,];
+
+// arr.pop();
+// arr.push('5');
+// arr.shift();
+// arr.unshift(1, "2", 300);
+
+// for (let i = 0; i < arr.length; i++ ) {
+//     console.log(arr[i]);
+// }
+
+let arr = [ 1, 2, 3, 4, 5,];
+arr.forEach(function(item, i, massive) {
+    console.log(i, item + " в массиве " + massive);
+    // console.log(i + ': ' + item + "в массиве " + massive + ')');
+});
+
+console.log(arr);
